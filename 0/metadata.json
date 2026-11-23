@@ -1,0 +1,48 @@
+{
+  "cli_version": "0.13.4",
+  "checkpoint_id": "01M833B5SP3753MH7C45KXVFEV",
+  "session_id": "01a20443-3cc7-7f93-8888-f4ee691e978e",
+  "strategy": "manual-commit",
+  "created_at": "2026-11-23T02:21:45.587213Z",
+  "branch": "main",
+  "checkpoints_count": 9,
+  "save_step_count": 3,
+  "files_touched": [
+    "interviews/project-b-regulatory-compliance-20261123-0117.md"
+  ],
+  "agent": "Codex",
+  "model": "gpt-6.2-sol",
+  "turn_id": "9ef04cba1169",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 69621,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 588416,
+    "output_tokens": 2276,
+    "api_call_count": 17
+  },
+  "session_token_usage": {
+    "input_tokens": 78275,
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 603136,
+    "output_tokens": 2290,
+    "api_call_count": 18
+  },
+  "redaction": {
+    "replacements": 318,
+    "layers": {
+      "betterleaks": 0,
+      "connection_string": 0,
+      "credential_key": 0,
+      "credential_value": 0,
+      "credentialed_uri": 0,
+      "entropy": 318,
+      "key_context": 0,
+      "provider_token": 0,
+      "shell_stdin": 0
+    }
+  },
+  "session_metrics": {
+    "turn_count": 9
+  }
+}
