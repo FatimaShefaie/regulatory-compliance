@@ -1,0 +1,1923 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+  "snapshot_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50-06",
+  "sequence": 6,
+  "stage": "actions-and-approvals",
+  "created_at": "2026-11-23T17:07:48.683049+00:00",
+  "status": "partial",
+  "predecessor": {
+    "snapshot_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50-05",
+    "path": "snapshots/05-impact-analysis.json",
+    "sha256": "sha256:32986fcdf860bcfe2ff94f06ca0d8997d1ce5a36609f418e3acb21f42722e78d"
+  },
+  "consumed_record_ids": [
+    "CALENDAR:ACT-001",
+    "CALENDAR:ACT-002",
+    "CALENDAR:ACT-003",
+    "CALENDAR:ACT-004",
+    "CALENDAR:ACT-005",
+    "CALENDAR:ACT-006",
+    "CALENDAR:ACT-007",
+    "CALENDAR:ACT-008",
+    "IMP:AI-001:A50-1",
+    "IMP:AI-001:A50-2",
+    "IMP:AI-001:A50-3",
+    "IMP:AI-001:A50-4",
+    "IMP:AI-001:A50-5",
+    "IMP:AI-001:POLICY",
+    "IMP:AI-002:A50-1",
+    "IMP:AI-002:A50-2",
+    "IMP:AI-002:A50-3",
+    "IMP:AI-002:A50-4",
+    "IMP:AI-002:A50-5",
+    "IMP:AI-002:POLICY",
+    "IMP:AI-003:A50-1",
+    "IMP:AI-003:A50-2",
+    "IMP:AI-003:A50-3",
+    "IMP:AI-003:A50-4",
+    "IMP:AI-003:A50-5",
+    "IMP:AI-003:POLICY",
+    "IMP:AI-004:A50-1",
+    "IMP:AI-004:A50-2",
+    "IMP:AI-004:A50-3",
+    "IMP:AI-004:A50-4",
+    "IMP:AI-004:A50-5",
+    "IMP:AI-004:POLICY",
+    "IMP:AI-005:A50-1",
+    "IMP:AI-005:A50-2",
+    "IMP:AI-005:A50-3",
+    "IMP:AI-005:A50-4",
+    "IMP:AI-005:A50-5",
+    "IMP:AI-005:POLICY",
+    "IMP:AI-006:A50-1",
+    "IMP:AI-006:A50-2",
+    "IMP:AI-006:A50-3",
+    "IMP:AI-006:A50-4",
+    "IMP:AI-006:A50-5",
+    "IMP:AI-006:POLICY",
+    "IMP:AI-007:A50-1",
+    "IMP:AI-007:A50-2",
+    "IMP:AI-007:A50-3",
+    "IMP:AI-007:A50-4",
+    "IMP:AI-007:A50-5",
+    "IMP:AI-007:POLICY",
+    "IMP:AI-008:A50-1",
+    "IMP:AI-008:A50-2",
+    "IMP:AI-008:A50-3",
+    "IMP:AI-008:A50-4",
+    "IMP:AI-008:A50-5",
+    "IMP:AI-008:POLICY"
+  ],
+  "produced_record_ids": [
+    "ACT-001",
+    "ACT-002",
+    "ACT-003",
+    "ACT-004",
+    "ACT-005",
+    "ACT-006",
+    "ACT-007",
+    "ACT-008",
+    "DRAFT:IMP:AI-008:A50-4",
+    "DRAFT:IMP:AI-008:A50-5",
+    "APP:ACT-001:OPERATIONS",
+    "APP:ACT-002:OPERATIONS",
+    "APP:ACT-003:LEGAL",
+    "APP:ACT-003:OPERATIONS",
+    "APP:ACT-004:OPERATIONS",
+    "APP:ACT-005:LEGAL",
+    "APP:ACT-005:OPERATIONS",
+    "APP:ACT-006:OPERATIONS",
+    "APP:ACT-007:LEGAL",
+    "APP:ACT-007:OPERATIONS",
+    "APP:ACT-008:OPERATIONS",
+    "APP:IMP:AI-005:A50-1:LEGAL",
+    "APP:IMP:AI-005:A50-3:LEGAL",
+    "APP:IMP:AI-005:A50-5:LEGAL",
+    "APP:IMP:AI-008:A50-4:LEGAL",
+    "APP:DRAFT:IMP:AI-008:A50-4:OPERATIONS",
+    "APP:IMP:AI-008:A50-5:LEGAL",
+    "APP:DRAFT:IMP:AI-008:A50-5:OPERATIONS",
+    "REQ:ACT-001:OPERATIONS",
+    "REQ:ACT-002:OPERATIONS",
+    "REQ:ACT-003:LEGAL",
+    "REQ:ACT-003:OPERATIONS",
+    "REQ:ACT-004:OPERATIONS",
+    "REQ:ACT-005:LEGAL",
+    "REQ:ACT-005:OPERATIONS",
+    "REQ:ACT-006:OPERATIONS",
+    "REQ:ACT-007:LEGAL",
+    "REQ:ACT-007:OPERATIONS",
+    "REQ:ACT-008:OPERATIONS",
+    "REQ:IMP:AI-005:A50-1:LEGAL",
+    "REQ:IMP:AI-005:A50-3:LEGAL",
+    "REQ:IMP:AI-005:A50-5:LEGAL",
+    "REQ:IMP:AI-008:A50-4:LEGAL",
+    "REQ:DRAFT:IMP:AI-008:A50-4:OPERATIONS",
+    "REQ:IMP:AI-008:A50-5:LEGAL",
+    "REQ:DRAFT:IMP:AI-008:A50-5:OPERATIONS",
+    "ESC:ACT-007",
+    "DEC:ACTION-SCHEDULING"
+  ],
+  "state": {
+    "as_of": "2026-08-26",
+    "proposed_actions": [
+      {
+        "id": "ACT-001",
+        "summary": "Add and verify first-interaction AI notice",
+        "evidence_ids": [
+          "CALENDAR:ACT-001",
+          "IMP:AI-004:POLICY"
+        ],
+        "action_id": "ACT-001",
+        "system_id": "AI-004",
+        "scope": "system",
+        "impact_ids": [
+          "IMP:AI-004:POLICY"
+        ],
+        "owner": "Learning Experience",
+        "proposed_due_date": "2026-09-04",
+        "calendar_record_id": "CALENDAR:ACT-001",
+        "calendar_source_status": "planned",
+        "calendar_source_version": "calendar-2026-08-26",
+        "approval_required": "operations",
+        "approval_status": "pending",
+        "calendar_eligible": true,
+        "draft_status": "proposed"
+      },
+      {
+        "id": "ACT-002",
+        "summary": "Resolve disclosure evidence conflict",
+        "evidence_ids": [
+          "CALENDAR:ACT-002",
+          "IMP:AI-007:POLICY"
+        ],
+        "action_id": "ACT-002",
+        "system_id": "AI-007",
+        "scope": "system",
+        "impact_ids": [
+          "IMP:AI-007:POLICY"
+        ],
+        "owner": "Marketing",
+        "proposed_due_date": "2026-09-03",
+        "calendar_record_id": "CALENDAR:ACT-002",
+        "calendar_source_status": "open",
+        "calendar_source_version": "calendar-2026-08-26",
+        "approval_required": "operations",
+        "approval_status": "pending",
+        "calendar_eligible": true,
+        "draft_status": "proposed"
+      },
+      {
+        "id": "ACT-003",
+        "summary": "Confirm recipient disclosure practice",
+        "evidence_ids": [
+          "CALENDAR:ACT-003",
+          "IMP:AI-002:POLICY"
+        ],
+        "action_id": "ACT-003",
+        "system_id": "AI-002",
+        "scope": "system",
+        "impact_ids": [
+          "IMP:AI-002:POLICY"
+        ],
+        "owner": "Admissions",
+        "proposed_due_date": "2026-09-08",
+        "calendar_record_id": "CALENDAR:ACT-003",
+        "calendar_source_status": "open",
+        "calendar_source_version": "calendar-2026-08-26",
+        "approval_required": "legal",
+        "approval_status": "pending",
+        "calendar_eligible": true,
+        "draft_status": "proposed"
+      },
+      {
+        "id": "ACT-004",
+        "summary": "Verify machine-readable provenance after publishing",
+        "evidence_ids": [
+          "CALENDAR:ACT-004",
+          "IMP:AI-003:POLICY"
+        ],
+        "action_id": "ACT-004",
+        "system_id": "AI-003",
+        "scope": "system",
+        "impact_ids": [
+          "IMP:AI-003:POLICY"
+        ],
+        "owner": "Communications",
+        "proposed_due_date": "2026-09-10",
+        "calendar_record_id": "CALENDAR:ACT-004",
+        "calendar_source_status": "open",
+        "calendar_source_version": "calendar-2026-08-26",
+        "approval_required": "operations",
+        "approval_status": "pending",
+        "calendar_eligible": true,
+        "draft_status": "proposed"
+      },
+      {
+        "id": "ACT-005",
+        "summary": "Refresh provider-role and release evidence",
+        "evidence_ids": [
+          "CALENDAR:ACT-005",
+          "IMP:AI-005:POLICY",
+          "IMP:AI-005:A50-1",
+          "IMP:AI-005:A50-3",
+          "IMP:AI-005:A50-5"
+        ],
+        "action_id": "ACT-005",
+        "system_id": "AI-005",
+        "scope": "system",
+        "impact_ids": [
+          "IMP:AI-005:POLICY",
+          "IMP:AI-005:A50-1",
+          "IMP:AI-005:A50-3",
+          "IMP:AI-005:A50-5"
+        ],
+        "owner": "Assessment Operations",
+        "proposed_due_date": "2026-09-12",
+        "calendar_record_id": "CALENDAR:ACT-005",
+        "calendar_source_status": "open",
+        "calendar_source_version": "calendar-2026-08-26",
+        "approval_required": "legal",
+        "approval_status": "pending",
+        "calendar_eligible": true,
+        "draft_status": "proposed"
+      },
+      {
+        "id": "ACT-006",
+        "summary": "Complete provenance test",
+        "evidence_ids": [
+          "CALENDAR:ACT-006",
+          "IMP:AI-008:POLICY"
+        ],
+        "action_id": "ACT-006",
+        "system_id": "AI-008",
+        "scope": "system",
+        "impact_ids": [
+          "IMP:AI-008:POLICY"
+        ],
+        "owner": "Communications",
+        "proposed_due_date": "2026-09-09",
+        "calendar_record_id": "CALENDAR:ACT-006",
+        "calendar_source_status": "open",
+        "calendar_source_version": "calendar-2026-08-26",
+        "approval_required": "operations",
+        "approval_status": "pending",
+        "calendar_eligible": true,
+        "draft_status": "proposed"
+      },
+      {
+        "id": "ACT-007",
+        "summary": "Review exception request",
+        "evidence_ids": [
+          "CALENDAR:ACT-007",
+          "IMP:AI-008:POLICY"
+        ],
+        "action_id": "ACT-007",
+        "system_id": "AI-008",
+        "scope": "system",
+        "impact_ids": [
+          "IMP:AI-008:POLICY"
+        ],
+        "owner": "Legal",
+        "proposed_due_date": "2026-09-15",
+        "calendar_record_id": "CALENDAR:ACT-007",
+        "calendar_source_status": "blocked",
+        "calendar_source_version": "calendar-2026-08-26",
+        "approval_required": "legal",
+        "approval_status": "pending",
+        "calendar_eligible": false,
+        "draft_status": "proposed",
+        "calendar_exclusion_reason": "The calendar row is blocked or lacks a supported scope, owner, date, or schedulable status."
+      },
+      {
+        "id": "ACT-008",
+        "summary": "Quarterly AI register evidence review",
+        "evidence_ids": [
+          "CALENDAR:ACT-008"
+        ],
+        "action_id": "ACT-008",
+        "system_id": "ALL",
+        "scope": "register-wide",
+        "impact_ids": [],
+        "owner": "Operations",
+        "proposed_due_date": "2026-10-02",
+        "calendar_record_id": "CALENDAR:ACT-008",
+        "calendar_source_status": "scheduled",
+        "calendar_source_version": "calendar-2026-08-26",
+        "approval_required": "operations",
+        "approval_status": "pending",
+        "calendar_eligible": true,
+        "draft_status": "proposed"
+      },
+      {
+        "id": "DRAFT:IMP:AI-008:A50-4",
+        "summary": "Verify that the visible label actually discloses artificial alteration and that it appears across the relevant versions.",
+        "evidence_ids": [
+          "IMP:AI-008:A50-4"
+        ],
+        "action_id": "DRAFT:IMP:AI-008:A50-4",
+        "system_id": "AI-008",
+        "scope": "system",
+        "impact_ids": [
+          "IMP:AI-008:A50-4"
+        ],
+        "owner": null,
+        "proposed_due_date": null,
+        "calendar_record_id": null,
+        "approval_status": "pending",
+        "calendar_eligible": false,
+        "draft_status": "proposed",
+        "calendar_exclusion_reason": "No matching calendar row establishes an owner and date."
+      },
+      {
+        "id": "DRAFT:IMP:AI-008:A50-5",
+        "summary": "Check the published viewer experience at first exposure, including accessibility.",
+        "evidence_ids": [
+          "IMP:AI-008:A50-5"
+        ],
+        "action_id": "DRAFT:IMP:AI-008:A50-5",
+        "system_id": "AI-008",
+        "scope": "system",
+        "impact_ids": [
+          "IMP:AI-008:A50-5"
+        ],
+        "owner": null,
+        "proposed_due_date": null,
+        "calendar_record_id": null,
+        "approval_status": "pending",
+        "calendar_eligible": false,
+        "draft_status": "proposed",
+        "calendar_exclusion_reason": "No matching calendar row establishes an owner and date."
+      }
+    ],
+    "approval_requirements": [
+      {
+        "id": "APP:ACT-001:OPERATIONS",
+        "summary": "Operations review pending",
+        "evidence_ids": [
+          "CALENDAR:ACT-001",
+          "IMP:AI-004:POLICY"
+        ],
+        "status": "pending",
+        "reviewer": "Operations",
+        "action_id": "ACT-001",
+        "request_id": "REQ:ACT-001:OPERATIONS"
+      },
+      {
+        "id": "APP:ACT-002:OPERATIONS",
+        "summary": "Operations review pending",
+        "evidence_ids": [
+          "CALENDAR:ACT-002",
+          "IMP:AI-007:POLICY"
+        ],
+        "status": "pending",
+        "reviewer": "Operations",
+        "action_id": "ACT-002",
+        "request_id": "REQ:ACT-002:OPERATIONS"
+      },
+      {
+        "id": "APP:ACT-003:LEGAL",
+        "summary": "Legal review pending",
+        "evidence_ids": [
+          "CALENDAR:ACT-003",
+          "IMP:AI-002:POLICY"
+        ],
+        "status": "pending",
+        "reviewer": "Legal",
+        "action_id": "ACT-003",
+        "request_id": "REQ:ACT-003:LEGAL"
+      },
+      {
+        "id": "APP:ACT-003:OPERATIONS",
+        "summary": "Operations review pending",
+        "evidence_ids": [
+          "CALENDAR:ACT-003",
+          "IMP:AI-002:POLICY"
+        ],
+        "status": "pending",
+        "reviewer": "Operations",
+        "action_id": "ACT-003",
+        "request_id": "REQ:ACT-003:OPERATIONS"
+      },
+      {
+        "id": "APP:ACT-004:OPERATIONS",
+        "summary": "Operations review pending",
+        "evidence_ids": [
+          "CALENDAR:ACT-004",
+          "IMP:AI-003:POLICY"
+        ],
+        "status": "pending",
+        "reviewer": "Operations",
+        "action_id": "ACT-004",
+        "request_id": "REQ:ACT-004:OPERATIONS"
+      },
+      {
+        "id": "APP:ACT-005:LEGAL",
+        "summary": "Legal review pending",
+        "evidence_ids": [
+          "CALENDAR:ACT-005",
+          "IMP:AI-005:POLICY",
+          "IMP:AI-005:A50-1",
+          "IMP:AI-005:A50-3",
+          "IMP:AI-005:A50-5"
+        ],
+        "status": "pending",
+        "reviewer": "Legal",
+        "action_id": "ACT-005",
+        "request_id": "REQ:ACT-005:LEGAL"
+      },
+      {
+        "id": "APP:ACT-005:OPERATIONS",
+        "summary": "Operations review pending",
+        "evidence_ids": [
+          "CALENDAR:ACT-005",
+          "IMP:AI-005:POLICY",
+          "IMP:AI-005:A50-1",
+          "IMP:AI-005:A50-3",
+          "IMP:AI-005:A50-5"
+        ],
+        "status": "pending",
+        "reviewer": "Operations",
+        "action_id": "ACT-005",
+        "request_id": "REQ:ACT-005:OPERATIONS"
+      },
+      {
+        "id": "APP:ACT-006:OPERATIONS",
+        "summary": "Operations review pending",
+        "evidence_ids": [
+          "CALENDAR:ACT-006",
+          "IMP:AI-008:POLICY"
+        ],
+        "status": "pending",
+        "reviewer": "Operations",
+        "action_id": "ACT-006",
+        "request_id": "REQ:ACT-006:OPERATIONS"
+      },
+      {
+        "id": "APP:ACT-007:LEGAL",
+        "summary": "Legal review pending",
+        "evidence_ids": [
+          "CALENDAR:ACT-007",
+          "IMP:AI-008:POLICY"
+        ],
+        "status": "pending",
+        "reviewer": "Legal",
+        "action_id": "ACT-007",
+        "request_id": "REQ:ACT-007:LEGAL"
+      },
+      {
+        "id": "APP:ACT-007:OPERATIONS",
+        "summary": "Operations review pending",
+        "evidence_ids": [
+          "CALENDAR:ACT-007",
+          "IMP:AI-008:POLICY"
+        ],
+        "status": "pending",
+        "reviewer": "Operations",
+        "action_id": "ACT-007",
+        "request_id": "REQ:ACT-007:OPERATIONS"
+      },
+      {
+        "id": "APP:ACT-008:OPERATIONS",
+        "summary": "Operations review pending",
+        "evidence_ids": [
+          "CALENDAR:ACT-008"
+        ],
+        "status": "pending",
+        "reviewer": "Operations",
+        "action_id": "ACT-008",
+        "request_id": "REQ:ACT-008:OPERATIONS"
+      },
+      {
+        "id": "APP:IMP:AI-005:A50-1:LEGAL",
+        "summary": "Legal interpretation pending",
+        "evidence_ids": [
+          "IMP:AI-005:A50-1"
+        ],
+        "status": "pending",
+        "reviewer": "Legal",
+        "impact_id": "IMP:AI-005:A50-1",
+        "request_id": "REQ:IMP:AI-005:A50-1:LEGAL"
+      },
+      {
+        "id": "APP:IMP:AI-005:A50-3:LEGAL",
+        "summary": "Legal interpretation pending",
+        "evidence_ids": [
+          "IMP:AI-005:A50-3"
+        ],
+        "status": "pending",
+        "reviewer": "Legal",
+        "impact_id": "IMP:AI-005:A50-3",
+        "request_id": "REQ:IMP:AI-005:A50-3:LEGAL"
+      },
+      {
+        "id": "APP:IMP:AI-005:A50-5:LEGAL",
+        "summary": "Legal interpretation pending",
+        "evidence_ids": [
+          "IMP:AI-005:A50-5"
+        ],
+        "status": "pending",
+        "reviewer": "Legal",
+        "impact_id": "IMP:AI-005:A50-5",
+        "request_id": "REQ:IMP:AI-005:A50-5:LEGAL"
+      },
+      {
+        "id": "APP:IMP:AI-008:A50-4:LEGAL",
+        "summary": "Legal interpretation pending",
+        "evidence_ids": [
+          "IMP:AI-008:A50-4"
+        ],
+        "status": "pending",
+        "reviewer": "Legal",
+        "impact_id": "IMP:AI-008:A50-4",
+        "request_id": "REQ:IMP:AI-008:A50-4:LEGAL"
+      },
+      {
+        "id": "APP:DRAFT:IMP:AI-008:A50-4:OPERATIONS",
+        "summary": "Operations review pending",
+        "evidence_ids": [
+          "IMP:AI-008:A50-4"
+        ],
+        "status": "pending",
+        "reviewer": "Operations",
+        "action_id": "DRAFT:IMP:AI-008:A50-4",
+        "request_id": "REQ:DRAFT:IMP:AI-008:A50-4:OPERATIONS"
+      },
+      {
+        "id": "APP:IMP:AI-008:A50-5:LEGAL",
+        "summary": "Legal interpretation pending",
+        "evidence_ids": [
+          "IMP:AI-008:A50-5"
+        ],
+        "status": "pending",
+        "reviewer": "Legal",
+        "impact_id": "IMP:AI-008:A50-5",
+        "request_id": "REQ:IMP:AI-008:A50-5:LEGAL"
+      },
+      {
+        "id": "APP:DRAFT:IMP:AI-008:A50-5:OPERATIONS",
+        "summary": "Operations review pending",
+        "evidence_ids": [
+          "IMP:AI-008:A50-5"
+        ],
+        "status": "pending",
+        "reviewer": "Operations",
+        "action_id": "DRAFT:IMP:AI-008:A50-5",
+        "request_id": "REQ:DRAFT:IMP:AI-008:A50-5:OPERATIONS"
+      }
+    ],
+    "review_requests": [
+      {
+        "id": "REQ:ACT-001:OPERATIONS",
+        "summary": "Confirm the proposed action and the evidence needed to address it. Add and verify first-interaction AI notice.",
+        "evidence_ids": [
+          "CALENDAR:ACT-001",
+          "IMP:AI-004:POLICY"
+        ],
+        "question": "Confirm the proposed action and the evidence needed to address it. Add and verify first-interaction AI notice.",
+        "reviewer": "Operations",
+        "required_reviewer": "Operations",
+        "system_id": "AI-004",
+        "action_id": "ACT-001",
+        "impact_ids": [
+          "IMP:AI-004:POLICY"
+        ],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "CALENDAR-01",
+            "source_id": "CALENDAR",
+            "version": {
+              "versions": [
+                "calendar-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.324695+00:00",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab"
+          },
+          {
+            "evidence_id": "EVIDENCE-01",
+            "source_id": "EVIDENCE",
+            "version": {
+              "versions": [],
+              "record_count": 10
+            },
+            "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b"
+          },
+          {
+            "evidence_id": "POLICY-02",
+            "source_id": "POLICY",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+              "observed_on": "2026-08-26",
+              "clarified_on": "2026-09-12"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+            "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0"
+          },
+          {
+            "evidence_id": "SYSTEMS-01",
+            "source_id": "SYSTEMS",
+            "version": {
+              "versions": [
+                "register-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      },
+      {
+        "id": "REQ:ACT-002:OPERATIONS",
+        "summary": "Confirm the proposed action and the evidence needed to address it. Resolve disclosure evidence conflict.",
+        "evidence_ids": [
+          "CALENDAR:ACT-002",
+          "IMP:AI-007:POLICY"
+        ],
+        "question": "Confirm the proposed action and the evidence needed to address it. Resolve disclosure evidence conflict.",
+        "reviewer": "Operations",
+        "required_reviewer": "Operations",
+        "system_id": "AI-007",
+        "action_id": "ACT-002",
+        "impact_ids": [
+          "IMP:AI-007:POLICY"
+        ],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "CALENDAR-01",
+            "source_id": "CALENDAR",
+            "version": {
+              "versions": [
+                "calendar-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.324695+00:00",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab"
+          },
+          {
+            "evidence_id": "EVIDENCE-01",
+            "source_id": "EVIDENCE",
+            "version": {
+              "versions": [],
+              "record_count": 10
+            },
+            "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b"
+          },
+          {
+            "evidence_id": "POLICY-02",
+            "source_id": "POLICY",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+              "observed_on": "2026-08-26",
+              "clarified_on": "2026-09-12"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+            "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0"
+          },
+          {
+            "evidence_id": "SYSTEMS-01",
+            "source_id": "SYSTEMS",
+            "version": {
+              "versions": [
+                "register-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      },
+      {
+        "id": "REQ:ACT-003:LEGAL",
+        "summary": "Confirm the proposed action and the evidence needed to address it. Confirm recipient disclosure practice.",
+        "evidence_ids": [
+          "CALENDAR:ACT-003",
+          "IMP:AI-002:POLICY"
+        ],
+        "question": "Confirm the proposed action and the evidence needed to address it. Confirm recipient disclosure practice.",
+        "reviewer": "Legal",
+        "required_reviewer": "Legal",
+        "system_id": "AI-002",
+        "action_id": "ACT-003",
+        "impact_ids": [
+          "IMP:AI-002:POLICY"
+        ],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "CALENDAR-01",
+            "source_id": "CALENDAR",
+            "version": {
+              "versions": [
+                "calendar-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.324695+00:00",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab"
+          },
+          {
+            "evidence_id": "EVIDENCE-01",
+            "source_id": "EVIDENCE",
+            "version": {
+              "versions": [],
+              "record_count": 10
+            },
+            "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b"
+          },
+          {
+            "evidence_id": "POLICY-02",
+            "source_id": "POLICY",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+              "observed_on": "2026-08-26",
+              "clarified_on": "2026-09-12"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+            "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0"
+          },
+          {
+            "evidence_id": "SYSTEMS-01",
+            "source_id": "SYSTEMS",
+            "version": {
+              "versions": [
+                "register-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      },
+      {
+        "id": "REQ:ACT-003:OPERATIONS",
+        "summary": "Confirm the operational owner, timing, and dependencies after Legal review.",
+        "evidence_ids": [
+          "CALENDAR:ACT-003",
+          "IMP:AI-002:POLICY"
+        ],
+        "question": "Confirm the operational owner, timing, and dependencies after Legal review.",
+        "reviewer": "Operations",
+        "required_reviewer": "Operations",
+        "system_id": "AI-002",
+        "action_id": "ACT-003",
+        "impact_ids": [
+          "IMP:AI-002:POLICY"
+        ],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "CALENDAR-01",
+            "source_id": "CALENDAR",
+            "version": {
+              "versions": [
+                "calendar-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.324695+00:00",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab"
+          },
+          {
+            "evidence_id": "EVIDENCE-01",
+            "source_id": "EVIDENCE",
+            "version": {
+              "versions": [],
+              "record_count": 10
+            },
+            "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b"
+          },
+          {
+            "evidence_id": "POLICY-02",
+            "source_id": "POLICY",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+              "observed_on": "2026-08-26",
+              "clarified_on": "2026-09-12"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+            "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0"
+          },
+          {
+            "evidence_id": "SYSTEMS-01",
+            "source_id": "SYSTEMS",
+            "version": {
+              "versions": [
+                "register-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      },
+      {
+        "id": "REQ:ACT-004:OPERATIONS",
+        "summary": "Confirm the proposed action and the evidence needed to address it. Verify machine-readable provenance after publishing.",
+        "evidence_ids": [
+          "CALENDAR:ACT-004",
+          "IMP:AI-003:POLICY"
+        ],
+        "question": "Confirm the proposed action and the evidence needed to address it. Verify machine-readable provenance after publishing.",
+        "reviewer": "Operations",
+        "required_reviewer": "Operations",
+        "system_id": "AI-003",
+        "action_id": "ACT-004",
+        "impact_ids": [
+          "IMP:AI-003:POLICY"
+        ],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "CALENDAR-01",
+            "source_id": "CALENDAR",
+            "version": {
+              "versions": [
+                "calendar-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.324695+00:00",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab"
+          },
+          {
+            "evidence_id": "EVIDENCE-01",
+            "source_id": "EVIDENCE",
+            "version": {
+              "versions": [],
+              "record_count": 10
+            },
+            "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b"
+          },
+          {
+            "evidence_id": "POLICY-02",
+            "source_id": "POLICY",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+              "observed_on": "2026-08-26",
+              "clarified_on": "2026-09-12"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+            "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0"
+          },
+          {
+            "evidence_id": "SYSTEMS-01",
+            "source_id": "SYSTEMS",
+            "version": {
+              "versions": [
+                "register-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      },
+      {
+        "id": "REQ:ACT-005:LEGAL",
+        "summary": "What current-release records establish the provider role, and what biometric data, if any, does the system use to infer emotions or intentions or categorise people?",
+        "evidence_ids": [
+          "CALENDAR:ACT-005",
+          "IMP:AI-005:POLICY",
+          "IMP:AI-005:A50-1",
+          "IMP:AI-005:A50-3",
+          "IMP:AI-005:A50-5"
+        ],
+        "question": "What current-release records establish the provider role, and what biometric data, if any, does the system use to infer emotions or intentions or categorise people?",
+        "reviewer": "Legal",
+        "required_reviewer": "Legal",
+        "system_id": "AI-005",
+        "action_id": "ACT-005",
+        "impact_ids": [
+          "IMP:AI-005:POLICY",
+          "IMP:AI-005:A50-1",
+          "IMP:AI-005:A50-3",
+          "IMP:AI-005:A50-5"
+        ],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "CALENDAR-01",
+            "source_id": "CALENDAR",
+            "version": {
+              "versions": [
+                "calendar-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.324695+00:00",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab"
+          },
+          {
+            "evidence_id": "EVIDENCE-01",
+            "source_id": "EVIDENCE",
+            "version": {
+              "versions": [],
+              "record_count": 10
+            },
+            "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b"
+          },
+          {
+            "evidence_id": "OJ-02",
+            "source_id": "OJ",
+            "version": {
+              "title": "L_202401689EN.000101.fmx.xml",
+              "celex": "32024R1689"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.988172+00:00",
+            "content_hash": "sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a"
+          },
+          {
+            "evidence_id": "POLICY-02",
+            "source_id": "POLICY",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+              "observed_on": "2026-08-26",
+              "clarified_on": "2026-09-12"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+            "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0"
+          },
+          {
+            "evidence_id": "SYSTEMS-01",
+            "source_id": "SYSTEMS",
+            "version": {
+              "versions": [
+                "register-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      },
+      {
+        "id": "REQ:ACT-005:OPERATIONS",
+        "summary": "Confirm the operational owner, timing, and dependencies after Legal review.",
+        "evidence_ids": [
+          "CALENDAR:ACT-005",
+          "IMP:AI-005:POLICY",
+          "IMP:AI-005:A50-1",
+          "IMP:AI-005:A50-3",
+          "IMP:AI-005:A50-5"
+        ],
+        "question": "Confirm the operational owner, timing, and dependencies after Legal review.",
+        "reviewer": "Operations",
+        "required_reviewer": "Operations",
+        "system_id": "AI-005",
+        "action_id": "ACT-005",
+        "impact_ids": [
+          "IMP:AI-005:POLICY",
+          "IMP:AI-005:A50-1",
+          "IMP:AI-005:A50-3",
+          "IMP:AI-005:A50-5"
+        ],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "CALENDAR-01",
+            "source_id": "CALENDAR",
+            "version": {
+              "versions": [
+                "calendar-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.324695+00:00",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab"
+          },
+          {
+            "evidence_id": "EVIDENCE-01",
+            "source_id": "EVIDENCE",
+            "version": {
+              "versions": [],
+              "record_count": 10
+            },
+            "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b"
+          },
+          {
+            "evidence_id": "OJ-02",
+            "source_id": "OJ",
+            "version": {
+              "title": "L_202401689EN.000101.fmx.xml",
+              "celex": "32024R1689"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.988172+00:00",
+            "content_hash": "sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a"
+          },
+          {
+            "evidence_id": "POLICY-02",
+            "source_id": "POLICY",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+              "observed_on": "2026-08-26",
+              "clarified_on": "2026-09-12"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+            "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0"
+          },
+          {
+            "evidence_id": "SYSTEMS-01",
+            "source_id": "SYSTEMS",
+            "version": {
+              "versions": [
+                "register-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      },
+      {
+        "id": "REQ:ACT-006:OPERATIONS",
+        "summary": "Confirm the proposed action and the evidence needed to address it. Complete provenance test.",
+        "evidence_ids": [
+          "CALENDAR:ACT-006",
+          "IMP:AI-008:POLICY"
+        ],
+        "question": "Confirm the proposed action and the evidence needed to address it. Complete provenance test.",
+        "reviewer": "Operations",
+        "required_reviewer": "Operations",
+        "system_id": "AI-008",
+        "action_id": "ACT-006",
+        "impact_ids": [
+          "IMP:AI-008:POLICY"
+        ],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "CALENDAR-01",
+            "source_id": "CALENDAR",
+            "version": {
+              "versions": [
+                "calendar-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.324695+00:00",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab"
+          },
+          {
+            "evidence_id": "EVIDENCE-01",
+            "source_id": "EVIDENCE",
+            "version": {
+              "versions": [],
+              "record_count": 10
+            },
+            "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b"
+          },
+          {
+            "evidence_id": "POLICY-02",
+            "source_id": "POLICY",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+              "observed_on": "2026-08-26",
+              "clarified_on": "2026-09-12"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+            "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0"
+          },
+          {
+            "evidence_id": "SYSTEMS-01",
+            "source_id": "SYSTEMS",
+            "version": {
+              "versions": [
+                "register-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      },
+      {
+        "id": "REQ:ACT-007:LEGAL",
+        "summary": "Does the exception request contain a rationale, named owner and expiry date, and what is Legal’s decision on it?",
+        "evidence_ids": [
+          "CALENDAR:ACT-007",
+          "IMP:AI-008:POLICY"
+        ],
+        "question": "Does the exception request contain a rationale, named owner and expiry date, and what is Legal’s decision on it?",
+        "reviewer": "Legal",
+        "required_reviewer": "Legal",
+        "system_id": "AI-008",
+        "action_id": "ACT-007",
+        "impact_ids": [
+          "IMP:AI-008:POLICY"
+        ],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "CALENDAR-01",
+            "source_id": "CALENDAR",
+            "version": {
+              "versions": [
+                "calendar-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.324695+00:00",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab"
+          },
+          {
+            "evidence_id": "EVIDENCE-01",
+            "source_id": "EVIDENCE",
+            "version": {
+              "versions": [],
+              "record_count": 10
+            },
+            "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b"
+          },
+          {
+            "evidence_id": "POLICY-02",
+            "source_id": "POLICY",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+              "observed_on": "2026-08-26",
+              "clarified_on": "2026-09-12"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+            "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0"
+          },
+          {
+            "evidence_id": "SYSTEMS-01",
+            "source_id": "SYSTEMS",
+            "version": {
+              "versions": [
+                "register-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      },
+      {
+        "id": "REQ:ACT-007:OPERATIONS",
+        "summary": "Confirm the operational owner, timing, and dependencies after Legal review.",
+        "evidence_ids": [
+          "CALENDAR:ACT-007",
+          "IMP:AI-008:POLICY"
+        ],
+        "question": "Confirm the operational owner, timing, and dependencies after Legal review.",
+        "reviewer": "Operations",
+        "required_reviewer": "Operations",
+        "system_id": "AI-008",
+        "action_id": "ACT-007",
+        "impact_ids": [
+          "IMP:AI-008:POLICY"
+        ],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "CALENDAR-01",
+            "source_id": "CALENDAR",
+            "version": {
+              "versions": [
+                "calendar-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.324695+00:00",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab"
+          },
+          {
+            "evidence_id": "EVIDENCE-01",
+            "source_id": "EVIDENCE",
+            "version": {
+              "versions": [],
+              "record_count": 10
+            },
+            "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b"
+          },
+          {
+            "evidence_id": "POLICY-02",
+            "source_id": "POLICY",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+              "observed_on": "2026-08-26",
+              "clarified_on": "2026-09-12"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+            "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0"
+          },
+          {
+            "evidence_id": "SYSTEMS-01",
+            "source_id": "SYSTEMS",
+            "version": {
+              "versions": [
+                "register-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      },
+      {
+        "id": "REQ:ACT-008:OPERATIONS",
+        "summary": "Confirm the scope and proposed date of the register-wide evidence review.",
+        "evidence_ids": [
+          "CALENDAR:ACT-008"
+        ],
+        "question": "Confirm the scope and proposed date of the register-wide evidence review.",
+        "reviewer": "Operations",
+        "required_reviewer": "Operations",
+        "system_id": "ALL",
+        "action_id": "ACT-008",
+        "impact_ids": [],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "CALENDAR-01",
+            "source_id": "CALENDAR",
+            "version": {
+              "versions": [
+                "calendar-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.324695+00:00",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      },
+      {
+        "id": "REQ:IMP:AI-005:A50-1:LEGAL",
+        "summary": "Assessment Operations should obtain current-release development, branding and interaction documentation.",
+        "evidence_ids": [
+          "IMP:AI-005:A50-1"
+        ],
+        "question": "Assessment Operations should obtain current-release development, branding and interaction documentation.",
+        "reviewer": "Legal",
+        "required_reviewer": "Legal",
+        "system_id": "AI-005",
+        "action_id": null,
+        "impact_ids": [
+          "IMP:AI-005:A50-1"
+        ],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "EVIDENCE-01",
+            "source_id": "EVIDENCE",
+            "version": {
+              "versions": [],
+              "record_count": 10
+            },
+            "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b"
+          },
+          {
+            "evidence_id": "OJ-02",
+            "source_id": "OJ",
+            "version": {
+              "title": "L_202401689EN.000101.fmx.xml",
+              "celex": "32024R1689"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.988172+00:00",
+            "content_hash": "sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a"
+          },
+          {
+            "evidence_id": "POLICY-02",
+            "source_id": "POLICY",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+              "observed_on": "2026-08-26",
+              "clarified_on": "2026-09-12"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+            "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0"
+          },
+          {
+            "evidence_id": "SYSTEMS-01",
+            "source_id": "SYSTEMS",
+            "version": {
+              "versions": [
+                "register-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      },
+      {
+        "id": "REQ:IMP:AI-005:A50-3:LEGAL",
+        "summary": "Assessment Operations should obtain technical documentation of biometric inputs, what the model infers and any categories assigned.",
+        "evidence_ids": [
+          "IMP:AI-005:A50-3"
+        ],
+        "question": "Assessment Operations should obtain technical documentation of biometric inputs, what the model infers and any categories assigned.",
+        "reviewer": "Legal",
+        "required_reviewer": "Legal",
+        "system_id": "AI-005",
+        "action_id": null,
+        "impact_ids": [
+          "IMP:AI-005:A50-3"
+        ],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "EVIDENCE-01",
+            "source_id": "EVIDENCE",
+            "version": {
+              "versions": [],
+              "record_count": 10
+            },
+            "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b"
+          },
+          {
+            "evidence_id": "OJ-02",
+            "source_id": "OJ",
+            "version": {
+              "title": "L_202401689EN.000101.fmx.xml",
+              "celex": "32024R1689"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.988172+00:00",
+            "content_hash": "sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a"
+          },
+          {
+            "evidence_id": "POLICY-02",
+            "source_id": "POLICY",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+              "observed_on": "2026-08-26",
+              "clarified_on": "2026-09-12"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+            "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0"
+          },
+          {
+            "evidence_id": "SYSTEMS-01",
+            "source_id": "SYSTEMS",
+            "version": {
+              "versions": [
+                "register-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      },
+      {
+        "id": "REQ:IMP:AI-005:A50-5:LEGAL",
+        "summary": "Resolve the current-release functions and verify the notice timing and accessibility if a disclosure duty applies.",
+        "evidence_ids": [
+          "IMP:AI-005:A50-5"
+        ],
+        "question": "Resolve the current-release functions and verify the notice timing and accessibility if a disclosure duty applies.",
+        "reviewer": "Legal",
+        "required_reviewer": "Legal",
+        "system_id": "AI-005",
+        "action_id": null,
+        "impact_ids": [
+          "IMP:AI-005:A50-5"
+        ],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "EVIDENCE-01",
+            "source_id": "EVIDENCE",
+            "version": {
+              "versions": [],
+              "record_count": 10
+            },
+            "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b"
+          },
+          {
+            "evidence_id": "OJ-02",
+            "source_id": "OJ",
+            "version": {
+              "title": "L_202401689EN.000101.fmx.xml",
+              "celex": "32024R1689"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.988172+00:00",
+            "content_hash": "sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a"
+          },
+          {
+            "evidence_id": "POLICY-02",
+            "source_id": "POLICY",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+              "observed_on": "2026-08-26",
+              "clarified_on": "2026-09-12"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+            "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0"
+          },
+          {
+            "evidence_id": "SYSTEMS-01",
+            "source_id": "SYSTEMS",
+            "version": {
+              "versions": [
+                "register-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      },
+      {
+        "id": "REQ:IMP:AI-008:A50-4:LEGAL",
+        "summary": "Verify that the visible label actually discloses artificial alteration and that it appears across the relevant versions.",
+        "evidence_ids": [
+          "IMP:AI-008:A50-4"
+        ],
+        "question": "Verify that the visible label actually discloses artificial alteration and that it appears across the relevant versions.",
+        "reviewer": "Legal",
+        "required_reviewer": "Legal",
+        "system_id": "AI-008",
+        "action_id": null,
+        "impact_ids": [
+          "IMP:AI-008:A50-4"
+        ],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "EVIDENCE-01",
+            "source_id": "EVIDENCE",
+            "version": {
+              "versions": [],
+              "record_count": 10
+            },
+            "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b"
+          },
+          {
+            "evidence_id": "OJ-02",
+            "source_id": "OJ",
+            "version": {
+              "title": "L_202401689EN.000101.fmx.xml",
+              "celex": "32024R1689"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.988172+00:00",
+            "content_hash": "sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a"
+          },
+          {
+            "evidence_id": "POLICY-02",
+            "source_id": "POLICY",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+              "observed_on": "2026-08-26",
+              "clarified_on": "2026-09-12"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+            "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0"
+          },
+          {
+            "evidence_id": "SYSTEMS-01",
+            "source_id": "SYSTEMS",
+            "version": {
+              "versions": [
+                "register-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      },
+      {
+        "id": "REQ:DRAFT:IMP:AI-008:A50-4:OPERATIONS",
+        "summary": "Confirm the owner and proposed date for this evidence action.",
+        "evidence_ids": [
+          "IMP:AI-008:A50-4"
+        ],
+        "question": "Confirm the owner and proposed date for this evidence action.",
+        "reviewer": "Operations",
+        "required_reviewer": "Operations",
+        "system_id": "AI-008",
+        "action_id": "DRAFT:IMP:AI-008:A50-4",
+        "impact_ids": [
+          "IMP:AI-008:A50-4"
+        ],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "EVIDENCE-01",
+            "source_id": "EVIDENCE",
+            "version": {
+              "versions": [],
+              "record_count": 10
+            },
+            "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b"
+          },
+          {
+            "evidence_id": "OJ-02",
+            "source_id": "OJ",
+            "version": {
+              "title": "L_202401689EN.000101.fmx.xml",
+              "celex": "32024R1689"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.988172+00:00",
+            "content_hash": "sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a"
+          },
+          {
+            "evidence_id": "POLICY-02",
+            "source_id": "POLICY",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+              "observed_on": "2026-08-26",
+              "clarified_on": "2026-09-12"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+            "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0"
+          },
+          {
+            "evidence_id": "SYSTEMS-01",
+            "source_id": "SYSTEMS",
+            "version": {
+              "versions": [
+                "register-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      },
+      {
+        "id": "REQ:IMP:AI-008:A50-5:LEGAL",
+        "summary": "Check the published viewer experience at first exposure, including accessibility.",
+        "evidence_ids": [
+          "IMP:AI-008:A50-5"
+        ],
+        "question": "Check the published viewer experience at first exposure, including accessibility.",
+        "reviewer": "Legal",
+        "required_reviewer": "Legal",
+        "system_id": "AI-008",
+        "action_id": null,
+        "impact_ids": [
+          "IMP:AI-008:A50-5"
+        ],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "EVIDENCE-01",
+            "source_id": "EVIDENCE",
+            "version": {
+              "versions": [],
+              "record_count": 10
+            },
+            "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b"
+          },
+          {
+            "evidence_id": "OJ-02",
+            "source_id": "OJ",
+            "version": {
+              "title": "L_202401689EN.000101.fmx.xml",
+              "celex": "32024R1689"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.988172+00:00",
+            "content_hash": "sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a"
+          },
+          {
+            "evidence_id": "POLICY-02",
+            "source_id": "POLICY",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+              "observed_on": "2026-08-26",
+              "clarified_on": "2026-09-12"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+            "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0"
+          },
+          {
+            "evidence_id": "SYSTEMS-01",
+            "source_id": "SYSTEMS",
+            "version": {
+              "versions": [
+                "register-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      },
+      {
+        "id": "REQ:DRAFT:IMP:AI-008:A50-5:OPERATIONS",
+        "summary": "Confirm the owner and proposed date for this evidence action.",
+        "evidence_ids": [
+          "IMP:AI-008:A50-5"
+        ],
+        "question": "Confirm the owner and proposed date for this evidence action.",
+        "reviewer": "Operations",
+        "required_reviewer": "Operations",
+        "system_id": "AI-008",
+        "action_id": "DRAFT:IMP:AI-008:A50-5",
+        "impact_ids": [
+          "IMP:AI-008:A50-5"
+        ],
+        "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+        "as_of": "2026-08-26",
+        "source_versions": [
+          {
+            "evidence_id": "EVIDENCE-01",
+            "source_id": "EVIDENCE",
+            "version": {
+              "versions": [],
+              "record_count": 10
+            },
+            "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b"
+          },
+          {
+            "evidence_id": "OJ-02",
+            "source_id": "OJ",
+            "version": {
+              "title": "L_202401689EN.000101.fmx.xml",
+              "celex": "32024R1689"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.988172+00:00",
+            "content_hash": "sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a"
+          },
+          {
+            "evidence_id": "POLICY-02",
+            "source_id": "POLICY",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+              "observed_on": "2026-08-26",
+              "clarified_on": "2026-09-12"
+            },
+            "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+            "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0"
+          },
+          {
+            "evidence_id": "SYSTEMS-01",
+            "source_id": "SYSTEMS",
+            "version": {
+              "versions": [
+                "register-2026-08-26"
+              ],
+              "record_count": 8
+            },
+            "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80"
+          }
+        ],
+        "status": "pending",
+        "delivery_status": "draft"
+      }
+    ],
+    "escalations": [
+      {
+        "id": "ESC:ACT-007",
+        "summary": "The calendar row is blocked or lacks a supported scope, owner, date, or schedulable status.",
+        "evidence_ids": [
+          "CALENDAR:ACT-007",
+          "IMP:AI-008:POLICY"
+        ],
+        "system_id": "AI-008",
+        "action_id": "ACT-007",
+        "resolution_need": "Confirm scheduling eligibility and any missing fields."
+      }
+    ]
+  },
+  "unresolved": [
+    {
+      "id": "ESC:ACT-007",
+      "summary": "The calendar row is blocked or lacks a supported scope, owner, date, or schedulable status.",
+      "evidence_ids": [
+        "CALENDAR:ACT-007",
+        "IMP:AI-008:POLICY"
+      ],
+      "system_id": "AI-008",
+      "action_id": "ACT-007",
+      "resolution_need": "Confirm scheduling eligibility and any missing fields."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "DEC:ACTION-SCHEDULING",
+      "summary": "Reuse verified source dates only for matched, schedulable calendar rows.",
+      "evidence_ids": [
+        "CALENDAR:ACT-001",
+        "CALENDAR:ACT-002",
+        "CALENDAR:ACT-003",
+        "CALENDAR:ACT-004",
+        "CALENDAR:ACT-005",
+        "CALENDAR:ACT-006",
+        "CALENDAR:ACT-007",
+        "CALENDAR:ACT-008",
+        "IMP:AI-001:A50-1",
+        "IMP:AI-001:A50-2",
+        "IMP:AI-001:A50-3",
+        "IMP:AI-001:A50-4",
+        "IMP:AI-001:A50-5",
+        "IMP:AI-001:POLICY",
+        "IMP:AI-002:A50-1",
+        "IMP:AI-002:A50-2",
+        "IMP:AI-002:A50-3",
+        "IMP:AI-002:A50-4",
+        "IMP:AI-002:A50-5",
+        "IMP:AI-002:POLICY",
+        "IMP:AI-003:A50-1",
+        "IMP:AI-003:A50-2",
+        "IMP:AI-003:A50-3",
+        "IMP:AI-003:A50-4",
+        "IMP:AI-003:A50-5",
+        "IMP:AI-003:POLICY",
+        "IMP:AI-004:A50-1",
+        "IMP:AI-004:A50-2",
+        "IMP:AI-004:A50-3",
+        "IMP:AI-004:A50-4",
+        "IMP:AI-004:A50-5",
+        "IMP:AI-004:POLICY",
+        "IMP:AI-005:A50-1",
+        "IMP:AI-005:A50-2",
+        "IMP:AI-005:A50-3",
+        "IMP:AI-005:A50-4",
+        "IMP:AI-005:A50-5",
+        "IMP:AI-005:POLICY",
+        "IMP:AI-006:A50-1",
+        "IMP:AI-006:A50-2",
+        "IMP:AI-006:A50-3",
+        "IMP:AI-006:A50-4",
+        "IMP:AI-006:A50-5",
+        "IMP:AI-006:POLICY",
+        "IMP:AI-007:A50-1",
+        "IMP:AI-007:A50-2",
+        "IMP:AI-007:A50-3",
+        "IMP:AI-007:A50-4",
+        "IMP:AI-007:A50-5",
+        "IMP:AI-007:POLICY",
+        "IMP:AI-008:A50-1",
+        "IMP:AI-008:A50-2",
+        "IMP:AI-008:A50-3",
+        "IMP:AI-008:A50-4",
+        "IMP:AI-008:A50-5",
+        "IMP:AI-008:POLICY"
+      ],
+      "concern": "An unsupported date or owner could be mistaken for an authorized commitment.",
+      "options": [
+        "Infer an owner and deadline",
+        "Use verified calendar values and leave unsupported fields blank"
+      ],
+      "chosen_behavior": "Copy matched source fields, preserve blocked calendar status, and leave unsupported proposals undated.",
+      "rationale": "Operations owns activation and scheduling, and Legal owns interpretation and exception approval.",
+      "tradeoffs": [
+        "Some proposed actions remain unscheduled until Operations supplies the missing fields."
+      ],
+      "downstream_effect": "Stage 07 can render only eligible date-bearing proposals as tentative events."
+    }
+  ]
+}

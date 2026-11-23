@@ -1,0 +1,453 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "snapshot_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50-02",
+  "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+  "stage": "source-capture",
+  "sequence": 2,
+  "created_at": "2026-11-23T17:07:48.339032+00:00",
+  "status": "complete",
+  "predecessor": {
+    "snapshot_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50-01",
+    "path": "snapshots/01-scope.json",
+    "sha256": "sha256:ace298a7b860f8960bb1ded69dc827099116fe95c6fc11edaaae48c0c3c51bad"
+  },
+  "consumed_record_ids": [
+    "SCOPE-01"
+  ],
+  "produced_record_ids": [
+    "LAW-01",
+    "OJ-01",
+    "OJ-02",
+    "AMEND-01",
+    "AMEND-02",
+    "CONSOLIDATED-01",
+    "CONSOLIDATED-02",
+    "TIME-01",
+    "FAQ-01",
+    "POLICY-01",
+    "POLICY-02",
+    "SYSTEMS-01",
+    "EVIDENCE-01",
+    "CALENDAR-01"
+  ],
+  "state": {
+    "sources": [
+      {
+        "id": "LAW-01",
+        "source_id": "LAW",
+        "evidence_ids": [
+          "LAW-01"
+        ],
+        "source_role": "official-guidance",
+        "authority": "advisory",
+        "locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+        "disclosed_locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+        "content_type": "text/html; charset=utf-8",
+        "retrieval_status": "retrieved",
+        "version_metadata": {
+          "title": "Article 50: Transparency obligations for providers and deployers of certain AI systems | AI Act Service Desk"
+        },
+        "local_reference": "deliverables/sources/LAW-01.body",
+        "content_hash": "sha256:0c344ca653fe26813ac5228464b460cecdc5cea3d5f8188987b23d8cd46862a4",
+        "locators": {
+          "document_identity_marker": "<title[^>]*>\\s*Article 50:"
+        },
+        "retrieved_at": "2026-11-23T17:07:47.338320+00:00",
+        "http_status": 200,
+        "effective_locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+        "summary": "LAW document retrieved",
+        "review_date_check": "pending authority-and-timing review"
+      },
+      {
+        "id": "OJ-01",
+        "source_id": "OJ",
+        "evidence_ids": [],
+        "source_role": "binding-regulation",
+        "authority": "binding",
+        "locator": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+        "disclosed_locator": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+        "content_type": "text/html; charset=UTF-8",
+        "retrieval_status": "unavailable",
+        "version_metadata": null,
+        "local_reference": null,
+        "content_hash": null,
+        "locators": null,
+        "retrieved_at": "2026-11-23T17:07:47.321856+00:00",
+        "http_status": 202,
+        "effective_locator": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+        "summary": "No complete document returned (HTTP 202, curl 0)"
+      },
+      {
+        "id": "OJ-02",
+        "source_id": "OJ",
+        "evidence_ids": [
+          "OJ-02"
+        ],
+        "source_role": "binding-regulation",
+        "authority": "binding",
+        "locator": "https://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+        "disclosed_locator": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+        "content_type": "application/xhtml+xml;charset=UTF-8",
+        "retrieval_status": "retrieved",
+        "version_metadata": {
+          "title": "L_202401689EN.000101.fmx.xml",
+          "celex": "32024R1689"
+        },
+        "local_reference": "deliverables/sources/OJ-02.body",
+        "content_hash": "sha256:8f0b656302f9864cc87e040c371f209a9d65ae1a6cecc25ca5eb737e872d721a",
+        "locators": {
+          "document_identity_marker": "32024R1689|L_202401689|2024/1689"
+        },
+        "retrieved_at": "2026-11-23T17:07:47.988172+00:00",
+        "http_status": 200,
+        "effective_locator": "https://publications.europa.eu/resource/cellar/dc8116a1-3fe6-11ef-865a-01aa75ed71a1.0006.03/DOC_1",
+        "summary": "OJ document retrieved",
+        "review_date_check": "pending authority-and-timing review"
+      },
+      {
+        "id": "AMEND-01",
+        "source_id": "AMEND",
+        "evidence_ids": [],
+        "source_role": "binding-regulation",
+        "authority": "binding",
+        "locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744",
+        "disclosed_locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744",
+        "content_type": "text/html; charset=UTF-8",
+        "retrieval_status": "unavailable",
+        "version_metadata": null,
+        "local_reference": null,
+        "content_hash": null,
+        "locators": null,
+        "retrieved_at": "2026-11-23T17:07:47.318010+00:00",
+        "http_status": 202,
+        "effective_locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744",
+        "summary": "No complete document returned (HTTP 202, curl 0)"
+      },
+      {
+        "id": "AMEND-02",
+        "source_id": "AMEND",
+        "evidence_ids": [
+          "AMEND-02"
+        ],
+        "source_role": "binding-regulation",
+        "authority": "binding",
+        "locator": "https://publications.europa.eu/resource/cellar/b459c07f-86fb-11f1-bf5e-01aa75ed71a1.0006.03/DOC_1",
+        "disclosed_locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744",
+        "content_type": "application/xhtml+xml;charset=UTF-8",
+        "retrieval_status": "retrieved",
+        "version_metadata": {
+          "title": "L_202601744EN.000101.fmx.xml",
+          "celex": "32026R1744"
+        },
+        "local_reference": "deliverables/sources/AMEND-02.body",
+        "content_hash": "sha256:9d754652b867722807e4219c85912ce354233e58a1b4eb8c7752b4d1922993db",
+        "locators": {
+          "document_identity_marker": "32026R1744|L_202601744|2026/1744"
+        },
+        "retrieved_at": "2026-11-23T17:07:47.867284+00:00",
+        "http_status": 200,
+        "effective_locator": "https://publications.europa.eu/resource/cellar/b459c07f-86fb-11f1-bf5e-01aa75ed71a1.0006.03/DOC_1",
+        "summary": "AMEND document retrieved",
+        "review_date_check": "pending authority-and-timing review"
+      },
+      {
+        "id": "CONSOLIDATED-01",
+        "source_id": "CONSOLIDATED",
+        "evidence_ids": [],
+        "source_role": "other",
+        "authority": "unknown",
+        "locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+        "disclosed_locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+        "content_type": "text/html; charset=UTF-8",
+        "retrieval_status": "unavailable",
+        "version_metadata": null,
+        "local_reference": null,
+        "content_hash": null,
+        "locators": null,
+        "retrieved_at": "2026-11-23T17:07:47.320437+00:00",
+        "http_status": 202,
+        "effective_locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+        "summary": "No complete document returned (HTTP 202, curl 0)"
+      },
+      {
+        "id": "CONSOLIDATED-02",
+        "source_id": "CONSOLIDATED",
+        "evidence_ids": [
+          "CONSOLIDATED-02"
+        ],
+        "source_role": "other",
+        "authority": "unknown",
+        "locator": "https://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+        "disclosed_locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+        "content_type": "application/xhtml+xml;charset=UTF-8",
+        "retrieval_status": "retrieved",
+        "version_metadata": {
+          "title": "Consolidated TEXT: 32024R1689 — EN — 27.07.2026",
+          "celex": "02024R1689-20260727"
+        },
+        "local_reference": "deliverables/sources/CONSOLIDATED-02.body",
+        "content_hash": "sha256:5e7719f77e8a606b257dc25958ee3222c4383300a5a34270a5b850a2ce8b8715",
+        "locators": {
+          "document_identity_marker": "02024R1689-20260727|CL2024R1689EN001|27[./]07[./]2026"
+        },
+        "retrieved_at": "2026-11-23T17:07:47.931561+00:00",
+        "http_status": 200,
+        "effective_locator": "https://publications.europa.eu/resource/cellar/b1730fb2-8f1c-11f1-9262-01aa75ed71a1.0001.03/DOC_1",
+        "summary": "CONSOLIDATED document retrieved",
+        "review_date_check": "pending authority-and-timing review"
+      },
+      {
+        "id": "TIME-01",
+        "source_id": "TIME",
+        "evidence_ids": [
+          "TIME-01"
+        ],
+        "source_role": "official-guidance",
+        "authority": "advisory",
+        "locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline",
+        "disclosed_locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline",
+        "content_type": "text/html; charset=utf-8",
+        "retrieval_status": "retrieved",
+        "version_metadata": {
+          "title": "Timeline for the Implementation of the EU AI Act | AI Act Service Desk"
+        },
+        "local_reference": "deliverables/sources/TIME-01.body",
+        "content_hash": "sha256:753cb3d30b5bf120d72039829b65825416ed23b451a7a3d86824253297046e35",
+        "locators": {
+          "document_identity_marker": "<title[^>]*>\\s*Timeline for the Implementation of the EU AI Act"
+        },
+        "retrieved_at": "2026-11-23T17:07:47.696789+00:00",
+        "http_status": 200,
+        "effective_locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline",
+        "summary": "TIME document retrieved",
+        "review_date_check": "pending authority-and-timing review"
+      },
+      {
+        "id": "FAQ-01",
+        "source_id": "FAQ",
+        "evidence_ids": [
+          "FAQ-01"
+        ],
+        "source_role": "official-guidance",
+        "authority": "advisory",
+        "locator": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+        "disclosed_locator": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+        "content_type": "text/html; charset=UTF-8",
+        "retrieval_status": "retrieved",
+        "version_metadata": {
+          "title": "Transparency obligations under Article 50 of the AI Act | Shaping Europe’s digital future"
+        },
+        "local_reference": "deliverables/sources/FAQ-01.body",
+        "content_hash": "sha256:e8a198fd43eb9b6bc9ca800244a9c8b0672cbbdb7f2ec4cb475e2ee4c0e08597",
+        "locators": {
+          "document_identity_marker": "<title[^>]*>\\s*Transparency obligations under Article 50"
+        },
+        "retrieved_at": "2026-11-23T17:07:47.549936+00:00",
+        "http_status": 200,
+        "effective_locator": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+        "summary": "FAQ document retrieved",
+        "review_date_check": "pending authority-and-timing review"
+      },
+      {
+        "id": "POLICY-01",
+        "source_id": "POLICY",
+        "evidence_ids": [
+          "POLICY-01"
+        ],
+        "source_role": "internal-policy",
+        "authority": "internal-control",
+        "locator": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856",
+        "disclosed_locator": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856",
+        "content_type": "text/html; charset=utf-8",
+        "retrieval_status": "unverified",
+        "version_metadata": null,
+        "local_reference": "deliverables/sources/POLICY-01.body",
+        "content_hash": "sha256:c090fd3e8185aa662bb2fa79ba576653e0358387972c5589dcce75e5f9e8a0d0",
+        "locators": null,
+        "retrieved_at": "2026-11-23T17:07:47.761483+00:00",
+        "http_status": 200,
+        "effective_locator": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856",
+        "summary": "Published HTML did not provide a verified policy block tree"
+      },
+      {
+        "id": "POLICY-02",
+        "source_id": "POLICY",
+        "evidence_ids": [
+          "POLICY-02"
+        ],
+        "source_role": "internal-policy",
+        "authority": "internal-control",
+        "locator": "https://www.notion.so/api/v3/loadPageChunk",
+        "disclosed_locator": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856",
+        "content_type": "application/json; charset=utf-8",
+        "retrieval_status": "retrieved",
+        "version_metadata": {
+          "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+          "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+          "policy_version": "AI-POL-2026-08-15",
+          "context_revision": "RC-CONTEXT-2026-09-12-R1",
+          "case_dates": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+          "observed_on": "2026-08-26",
+          "clarified_on": "2026-09-12"
+        },
+        "local_reference": "deliverables/sources/POLICY-02.body",
+        "content_hash": "sha256:4c3fa5860bea5cee1b3d48df5d1d1bd01b9d12e3af8c26ba3470c59b7d25b6a0",
+        "locators": [
+          "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+          "bcd6574a-5228-4877-8d16-d24c45c80544",
+          "1c33c0b1-6c73-4218-8aa3-83fbfb653aba",
+          "868f44e2-4592-4ba0-821a-dce2c1dcc5d3",
+          "03ba4640-39b7-4ea1-927d-5ce980872718",
+          "5bcbdfef-1800-4bcf-8cd2-d6f32125c9ff",
+          "7e90cdc4-4505-4858-be25-515616d70184",
+          "3e6cadff-3969-489a-9815-129b14e02f0c",
+          "41ca6506-ba15-4af7-a03e-c57112da262a",
+          "9f65728f-339c-4960-9383-e003186b816b",
+          "d6992cd6-cb82-416a-87f1-0cc6bf4b4204",
+          "8ddc27f5-6326-470f-aa2b-71f04ac6f616",
+          "a9d1fb18-ee77-4c80-a085-6e06966c8f1e",
+          "c8c5d892-a333-4497-a1d1-87ed94105150",
+          "5ae4808f-d249-4ee7-bd9f-66bd15d58055",
+          "5fb89831-20be-4a26-9a9e-43aaf231cc5e",
+          "4ab52877-9716-44f5-a219-cbb0a0557468",
+          "77291703-0ee3-4fbf-90c8-1c2022298147",
+          "66b46c79-a988-41e5-a598-535dc2a211c2",
+          "4c3ab759-d0f5-4358-a8e5-54260585118f",
+          "911cd23c-b6fd-4192-b395-da1840cc1e20",
+          "39a6c5d1-4cf3-42ea-bed2-e2358a652904",
+          "bd8de7fd-e435-4f7f-bc65-e344ad9400a4",
+          "d77be889-f435-4c29-91cb-4a92d97fde72",
+          "3f8d8763-fa5f-4ffe-8122-73a15496d8b5",
+          "2a762c65-4b93-42a5-ae1c-c7134956c2cf",
+          "03ec4cd9-cf3f-4949-9e03-3e11bceca258",
+          "bfc055c8-f6f6-4930-9a3a-0b41f44df6bc",
+          "de175065-2691-4e41-81f4-c8ea55d1b5ac",
+          "4689e99e-1a31-40ca-8c5c-0bd552e34aeb",
+          "2aacbbf1-953a-463f-92e3-70b3db3e5131",
+          "1f79995a-5284-45a9-b09a-aab48b57a876",
+          "2e28b3c4-a5e1-4dc3-9a18-0a22ff63e41e",
+          "640e17f8-d74e-42d5-8205-ca86ab7544d8",
+          "2baa4238-573a-4f91-a394-c7dd73ba2f5c",
+          "d194ed55-af4e-45e4-bee4-521c4b250e9a",
+          "a44120e5-ad1b-4e65-8c06-dc4f43c3630b",
+          "23072c7a-9845-4763-8d83-cfc01e170388",
+          "a46fd543-30cc-4cd3-bf4d-591434c636f2",
+          "0ae801e1-cc9e-4460-9853-f7309b21eac2",
+          "af61ff06-4e78-44a8-9d7f-52238a870a79",
+          "ddb274c4-e916-4511-a1b7-b19f1f65e756"
+        ],
+        "retrieved_at": "2026-11-23T17:07:47.951643+00:00",
+        "http_status": 200,
+        "effective_locator": "https://www.notion.so/api/v3/loadPageChunk",
+        "summary": "POLICY document retrieved"
+      },
+      {
+        "id": "SYSTEMS-01",
+        "source_id": "SYSTEMS",
+        "evidence_ids": [
+          "SYSTEMS-01"
+        ],
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "locator": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU/export?format=csv",
+        "disclosed_locator": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU",
+        "content_type": "text/csv; charset=utf-8",
+        "retrieval_status": "retrieved",
+        "version_metadata": {
+          "versions": [
+            "register-2026-08-26"
+          ],
+          "record_count": 8
+        },
+        "local_reference": "deliverables/sources/SYSTEMS-01.body",
+        "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80",
+        "locators": {
+          "AI-001": 2,
+          "AI-002": 3,
+          "AI-003": 4,
+          "AI-004": 5,
+          "AI-005": 6,
+          "AI-006": 7,
+          "AI-007": 8,
+          "AI-008": 9
+        },
+        "retrieved_at": "2026-11-23T17:07:48.066288+00:00",
+        "http_status": 200,
+        "effective_locator": "https://doc-0k-48-sheets.googleusercontent.com/export/3ropqptqom1b57lc45egbob1oo/h2col9sr6pieutpl6nnsrtv0as/1795453665000/116538737177717635516/*/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU?format=csv",
+        "summary": "SYSTEMS document retrieved"
+      },
+      {
+        "id": "EVIDENCE-01",
+        "source_id": "EVIDENCE",
+        "evidence_ids": [
+          "EVIDENCE-01"
+        ],
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "locator": "https://docs.google.com/spreadsheets/d/19BYZ68OSbsa1i9OfF6MzthrdC6q6mt6IWk6ucI8u7Rk/export?format=csv",
+        "disclosed_locator": "https://docs.google.com/spreadsheets/d/19BYZ68OSbsa1i9OfF6MzthrdC6q6mt6IWk6ucI8u7Rk",
+        "content_type": "text/csv; charset=utf-8",
+        "retrieval_status": "retrieved",
+        "version_metadata": {
+          "versions": [],
+          "record_count": 10
+        },
+        "local_reference": "deliverables/sources/EVIDENCE-01.body",
+        "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+        "locators": {
+          "REC-001": 2,
+          "REC-002": 3,
+          "REC-003": 4,
+          "REC-004": 5,
+          "REC-005": 6,
+          "REC-006": 7,
+          "REC-007": 8,
+          "REC-008": 9,
+          "REC-009": 10,
+          "REC-010": 11
+        },
+        "retrieved_at": "2026-11-23T17:07:48.338618+00:00",
+        "http_status": 200,
+        "effective_locator": "https://doc-10-48-sheets.googleusercontent.com/export/3ropqptqom1b57lc45egbob1oo/ipg56gm0g067op1b7p7gi6867c/1795453665000/116538737177717635516/*/19BYZ68OSbsa1i9OfF6MzthrdC6q6mt6IWk6ucI8u7Rk?format=csv",
+        "summary": "EVIDENCE document retrieved"
+      },
+      {
+        "id": "CALENDAR-01",
+        "source_id": "CALENDAR",
+        "evidence_ids": [
+          "CALENDAR-01"
+        ],
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "locator": "https://docs.google.com/spreadsheets/d/1xtXl_P7Yb9LaECZjjgtlyI-idoAJTAhH-1gQ4vQaCGA/export?format=csv",
+        "disclosed_locator": "https://docs.google.com/spreadsheets/d/1xtXl_P7Yb9LaECZjjgtlyI-idoAJTAhH-1gQ4vQaCGA",
+        "content_type": "text/csv; charset=utf-8",
+        "retrieval_status": "retrieved",
+        "version_metadata": {
+          "versions": [
+            "calendar-2026-08-26"
+          ],
+          "record_count": 8
+        },
+        "local_reference": "deliverables/sources/CALENDAR-01.body",
+        "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab",
+        "locators": {
+          "ACT-001": 2,
+          "ACT-002": 3,
+          "ACT-003": 4,
+          "ACT-004": 5,
+          "ACT-005": 6,
+          "ACT-006": 7,
+          "ACT-007": 8,
+          "ACT-008": 9
+        },
+        "retrieved_at": "2026-11-23T17:07:48.324695+00:00",
+        "http_status": 200,
+        "effective_locator": "https://doc-0o-48-sheets.googleusercontent.com/export/3ropqptqom1b57lc45egbob1oo/pdp86687lgh405le7buq6nusrk/1795453665000/116538737177717635516/*/1xtXl_P7Yb9LaECZjjgtlyI-idoAJTAhH-1gQ4vQaCGA?format=csv",
+        "summary": "CALENDAR document retrieved"
+      }
+    ]
+  },
+  "unresolved": [],
+  "decisions": []
+}

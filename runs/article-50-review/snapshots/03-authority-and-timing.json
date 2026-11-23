@@ -1,0 +1,158 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "run_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50",
+  "snapshot_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50-03",
+  "sequence": 3,
+  "stage": "authority-and-timing",
+  "created_at": "2026-11-23T17:07:48.492069+00:00",
+  "status": "complete",
+  "predecessor": {
+    "snapshot_id": "71d8c823-176a-4d48-b3fc-ce7f90612d50-02",
+    "path": "snapshots/02-source-capture.json",
+    "sha256": "sha256:86c36d13addf2db6b3b2bafc33cc8323773b2f7490b55de8873b70685d33fd5f"
+  },
+  "consumed_record_ids": [
+    "OJ-01",
+    "OJ-02",
+    "AMEND-01",
+    "AMEND-02",
+    "CONSOLIDATED-01",
+    "CONSOLIDATED-02",
+    "LAW-01",
+    "TIME-01",
+    "FAQ-01"
+  ],
+  "produced_record_ids": [
+    "RULE-A50-1",
+    "RULE-A50-2",
+    "RULE-A50-3",
+    "RULE-A50-4",
+    "RULE-A50-5",
+    "TIMING-GENERAL",
+    "TIMING-A50-2-TRANSITION",
+    "CONTEXT-LAW",
+    "CONTEXT-TIME",
+    "CONTEXT-FAQ",
+    "CROSSCHECK-CONSOLIDATED"
+  ],
+  "state": {
+    "as_of": "2026-08-26",
+    "binding_rules": [
+      {
+        "id": "RULE-A50-1",
+        "summary": "Providers of systems intended to interact directly with people must ensure AI notice unless the AI nature is obvious.",
+        "evidence_ids": [
+          "OJ-02"
+        ],
+        "locator": "Regulation (EU) 2024/1689, Article 50(1)",
+        "provision_text": "Providers shall ensure that AI systems intended to interact directly with natural persons are designed and developed in such a way that the natural persons concerned are informed that they are interacting with an AI system, unless this is obvious from the point of view of a natural person who is reasonably well-informed, observant and circumspect, taking into account the circumstances and the context of use. This obligation shall not apply to AI systems authorised by law to detect, prevent, investigate or prosecute criminal offences, subject to appropriate safeguards for the rights and freedoms of third parties, unless those systems are available for the public to report a criminal offence."
+      },
+      {
+        "id": "RULE-A50-2",
+        "summary": "Providers of qualifying synthetic-content systems must make outputs machine-readable and detectable.",
+        "evidence_ids": [
+          "OJ-02"
+        ],
+        "locator": "Regulation (EU) 2024/1689, Article 50(2)",
+        "provision_text": "Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated. Providers shall ensure their technical solutions are effective, interoperable, robust and reliable as far as this is technically feasible, taking into account the specificities and limitations of various types of content, the costs of implementation and the generally acknowledged state of the art, as may be reflected in relevant technical standards. This obligation shall not apply to the extent the AI systems perform an assistive function for standard editing or do not substantially alter the input data provided by the deployer or the semantics thereof, or where authorised by law to detect, prevent, investigate or prosecute criminal offences."
+      },
+      {
+        "id": "RULE-A50-3",
+        "summary": "Deployers of emotion recognition or biometric categorisation systems must inform exposed people.",
+        "evidence_ids": [
+          "OJ-02"
+        ],
+        "locator": "Regulation (EU) 2024/1689, Article 50(3)",
+        "provision_text": "Deployers of an emotion recognition system or a biometric categorisation system shall inform the natural persons exposed thereto of the operation of the system, and shall process the personal data in accordance with Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680, as applicable. This obligation shall not apply to AI systems used for biometric categorisation and emotion recognition, which are permitted by law to detect, prevent or investigate criminal offences, subject to appropriate safeguards for the rights and freedoms of third parties, and in accordance with Union law."
+      },
+      {
+        "id": "RULE-A50-4",
+        "summary": "Deployers must disclose qualifying deepfakes and public-interest text, subject to the applicable exceptions.",
+        "evidence_ids": [
+          "OJ-02"
+        ],
+        "locator": "Regulation (EU) 2024/1689, Article 50(4)",
+        "provision_text": "Deployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose that the content has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offence. Where the content forms part of an evidently artistic, creative, satirical, fictional or analogous work or programme, the transparency obligations set out in this paragraph are limited to disclosure of the existence of such generated or manipulated content in an appropriate manner that does not hamper the display or enjoyment of the work. Deployers of an AI system that generates or manipulates text which is published with the purpose of informing the public on matters of public interest shall disclose that the text has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offences or where the AI-generated content has undergone a process of human review or editorial control and where a natural or legal person holds editorial responsibility for the publication of the content."
+      },
+      {
+        "id": "RULE-A50-5",
+        "summary": "Required information must be clear, accessible and provided by first interaction or exposure.",
+        "evidence_ids": [
+          "OJ-02"
+        ],
+        "locator": "Regulation (EU) 2024/1689, Article 50(5)",
+        "provision_text": "The information referred to in paragraphs 1 to 4 shall be provided to the natural persons concerned in a clear and distinguishable manner at the latest at the time of the first interaction or exposure. The information shall conform to the applicable accessibility requirements."
+      }
+    ],
+    "timing_rules": [
+      {
+        "id": "TIMING-GENERAL",
+        "summary": "General Article 50 application date",
+        "evidence_ids": [
+          "OJ-02"
+        ],
+        "locator": "Article 113",
+        "applies_from": "2026-08-02",
+        "applicable_as_of": true
+      },
+      {
+        "id": "TIMING-A50-2-TRANSITION",
+        "summary": "Limited transition for qualifying Article 50(2) providers",
+        "evidence_ids": [
+          "OJ-02",
+          "AMEND-02"
+        ],
+        "locator": "Article 111(4), added by amendment Article 1(39)",
+        "source_publication_date": "2026-07-24",
+        "amendment_in_force_from": "2026-07-27",
+        "market_placement_before": "2026-08-02",
+        "compliance_due": "2026-12-02",
+        "required_facts": [
+          "provider role",
+          "qualifying synthetic output",
+          "market-placement date"
+        ]
+      }
+    ],
+    "guidance_context": [
+      {
+        "id": "CONTEXT-LAW",
+        "summary": "LAW interpretive context",
+        "evidence_ids": [
+          "LAW-01"
+        ],
+        "authority": "advisory"
+      },
+      {
+        "id": "CONTEXT-TIME",
+        "summary": "TIME interpretive context",
+        "evidence_ids": [
+          "TIME-01"
+        ],
+        "authority": "advisory"
+      },
+      {
+        "id": "CONTEXT-FAQ",
+        "summary": "FAQ interpretive context",
+        "evidence_ids": [
+          "FAQ-01"
+        ],
+        "authority": "advisory"
+      },
+      {
+        "id": "CROSSCHECK-CONSOLIDATED",
+        "summary": "Consolidated Article 50 and timing cross-check",
+        "evidence_ids": [
+          "OJ-02",
+          "AMEND-02",
+          "CONSOLIDATED-02"
+        ],
+        "locator": "Articles 50(1)–(5), 111(4), and 113",
+        "result": "matched"
+      }
+    ],
+    "authority_blockers": []
+  },
+  "unresolved": [],
+  "decisions": []
+}

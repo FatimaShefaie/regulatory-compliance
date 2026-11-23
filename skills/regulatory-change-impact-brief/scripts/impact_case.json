@@ -1,0 +1,297 @@
+{
+  "as_of": "2026-08-26",
+  "policy_sha256": "sha256:735e3e9c848f9dd9cd244ab8a9852e77791acd661d97a74a1eb0563881dd708d",
+  "rule_sha256": {
+    "A50-1": "sha256:6714d9cacb6fcfde4d6f9dab7db489c00c0736e6f3cd43c1dceebf1cdc56d77f",
+    "A50-2": "sha256:32a9b84b4967f66d8299f440ed297ff27bf595e67e1f01f4e0df0b43fa2c98d9",
+    "A50-3": "sha256:9e4f6ecc2c9b43a808b4265ab7497949e16b60918bd4ecfebb3a0835bec6aa42",
+    "A50-4": "sha256:eefbcd5acb30229f81d59481c05228d90697e903471b66b2dad49e225e813d85",
+    "A50-5": "sha256:bb4ffb7d429f0c4931d46e676606395c2c6aae259c7b47151ef88b584591d67f"
+  },
+  "supplier_transition_system_ids": [
+    "AI-003",
+    "AI-008"
+  ],
+  "systems": {
+    "AI-001": {
+      "facts_sha256": "sha256:f68834f961167559476397d690ef4f04e74a2db961d2ddbb19466de5ea6879bc",
+      "assessments": {
+        "A50-1": [
+          "supported-no-impact",
+          "Quillhaven operates a licensed third-party product. This provider duty does not attach to Quillhaven for this use.",
+          null
+        ],
+        "A50-2": [
+          "supported-no-impact",
+          "Quillhaven is the deployer of the licensed product. Any Article 50(2) marking duty attaches to the provider.",
+          null
+        ],
+        "A50-3": [
+          "supported-no-impact",
+          "The support chat does not classify biometric data or infer emotions or intentions.",
+          null
+        ],
+        "A50-4": [
+          "supported-no-impact",
+          "The use is direct learner dialogue rather than a deepfake or text published to inform the public on matters of public interest.",
+          null
+        ],
+        "A50-5": [
+          "supported-no-impact",
+          "The recorded use does not establish a Quillhaven disclosure duty under Article 50(1)–(4), so paragraph 5 creates no separate duty here.",
+          null
+        ],
+        "POLICY": [
+          "supported-impact",
+          "The internal first-interaction notice control applies. The register and notice evidence agree that a notice exists.",
+          null
+        ]
+      }
+    },
+    "AI-002": {
+      "facts_sha256": "sha256:c78c7942ca138f863d4fcc2c1543659ff4b008d958fee871c69a4ac7368d2b60",
+      "assessments": {
+        "A50-1": [
+          "supported-no-impact",
+          "Applicants do not interact with the AI product. Staff send individually reviewed emails.",
+          null
+        ],
+        "A50-2": [
+          "supported-no-impact",
+          "Quillhaven is the deployer of the licensed product. Any Article 50(2) marking duty attaches to the provider.",
+          null
+        ],
+        "A50-3": [
+          "supported-no-impact",
+          "The recorded use is private drafting of applicant replies, with no biometric categorisation or emotion recognition function.",
+          null
+        ],
+        "A50-4": [
+          "supported-no-impact",
+          "Individual administrative emails are not publication intended to inform the public on matters of public interest.",
+          null
+        ],
+        "A50-5": [
+          "supported-no-impact",
+          "The recorded use does not establish a Quillhaven disclosure duty under Article 50(1)–(4), so paragraph 5 creates no separate duty here.",
+          null
+        ],
+        "POLICY": [
+          "unresolved",
+          "The recipient disclosure record is missing. The internal policy requires documenting how drafts reach applicants.",
+          "Admissions should confirm and document the recipient disclosure practice and retain a representative example."
+        ]
+      }
+    },
+    "AI-003": {
+      "facts_sha256": "sha256:0985d0504fa4c2993981184e078d5f9f340caf230c3f0954df166a24ac465435",
+      "assessments": {
+        "A50-1": [
+          "supported-no-impact",
+          "The recorded use generates campaign images for publication and does not involve direct interaction between the public and the AI product.",
+          null
+        ],
+        "A50-2": [
+          "supported-no-impact",
+          "Quillhaven is the deployer of the licensed product. Any Article 50(2) marking duty attaches to the provider.",
+          null
+        ],
+        "A50-3": [
+          "supported-no-impact",
+          "The product generates images from prompts. The recorded use does not involve recognising emotions or categorising people from biometric data.",
+          null
+        ],
+        "A50-4": [
+          "supported-no-impact",
+          "The illustrated fictional scenes are not represented as authentic depictions of existing people, objects, places or events.",
+          null
+        ],
+        "A50-5": [
+          "supported-no-impact",
+          "The recorded use does not establish a Quillhaven disclosure duty under Article 50(1)–(4), so paragraph 5 creates no separate duty here.",
+          null
+        ],
+        "POLICY": [
+          "conflicting",
+          "The visible label is recorded. The published copy may have lost machine-readable provenance.",
+          "Communications should verify whether supported provenance survives publication and retain the exported copy."
+        ]
+      }
+    },
+    "AI-004": {
+      "facts_sha256": "sha256:58d72ba6a11778da077f461d7974c8a356160a76fbcd013c59b3c1d33e382de9",
+      "assessments": {
+        "A50-1": [
+          "supported-no-impact",
+          "Quillhaven operates a licensed third-party product. This provider duty does not attach to Quillhaven for this use.",
+          null
+        ],
+        "A50-2": [
+          "supported-no-impact",
+          "Quillhaven is the deployer of the licensed product. Any Article 50(2) marking duty attaches to the provider.",
+          null
+        ],
+        "A50-3": [
+          "supported-no-impact",
+          "The tool evaluates pronunciation and is not used to infer emotions or intentions or to categorise people from biometric data.",
+          null
+        ],
+        "A50-4": [
+          "supported-no-impact",
+          "Spoken practice feedback is neither a recorded deepfake publication nor public-interest text publication.",
+          null
+        ],
+        "A50-5": [
+          "supported-no-impact",
+          "The recorded use does not establish a Quillhaven disclosure duty under Article 50(1)–(4), so paragraph 5 creates no separate duty here.",
+          null
+        ],
+        "POLICY": [
+          "supported-impact",
+          "The internal learner notice control applies. The first interaction contains no notice as reported in REC-004.",
+          "Verify deployment of a clear first-interaction notice."
+        ]
+      }
+    },
+    "AI-005": {
+      "facts_sha256": "sha256:e94014249f8d4b7b92252c05029e01ae21f332f6caf0df1d3bbdf847e077f44f",
+      "assessments": {
+        "A50-1": [
+          "unresolved",
+          "Provider role is unknown for the current release. The evidence describes session flags and does not settle intended direct interaction.",
+          "Assessment Operations should obtain current-release development, branding and interaction documentation."
+        ],
+        "A50-2": [
+          "supported-no-impact",
+          "The recorded outcome is a classification flag for human review. No synthetic audio, image, video or text generation is described for this use.",
+          null
+        ],
+        "A50-3": [
+          "unresolved",
+          "A human makes the final decision. The current release documentation does not establish whether the system uses biometric data to infer emotion or intention or categorise people.",
+          "Assessment Operations should obtain technical documentation of biometric inputs, what the model infers and any categories assigned."
+        ],
+        "A50-4": [
+          "supported-no-impact",
+          "The recorded flag is used in an assessment workflow. The use does not publish synthetic public-interest text or generate a deepfake.",
+          null
+        ],
+        "A50-5": [
+          "unresolved",
+          "Any first-exposure notice requirement depends on the unresolved Article 50(3) facts or a finding under Article 50(1).",
+          "Resolve the current-release functions and verify the notice timing and accessibility if a disclosure duty applies."
+        ],
+        "POLICY": [
+          "unresolved",
+          "The current provider-role questionnaire is stale. Existing human-review evidence does not refresh the release documentation.",
+          "Obtain current development, commissioning, branding, and release evidence from Assessment Operations."
+        ]
+      }
+    },
+    "AI-006": {
+      "facts_sha256": "sha256:4f50bb1110e74de735839c75e1d030460fdef9069c2e926160e2ccb075e44b77",
+      "assessments": {
+        "A50-1": [
+          "supported-no-impact",
+          "The use is confined to staff drafting and Quillhaven is a deployer of the licensed product.",
+          null
+        ],
+        "A50-2": [
+          "supported-no-impact",
+          "Quillhaven is the deployer of the licensed product. Any Article 50(2) marking duty attaches to the provider.",
+          null
+        ],
+        "A50-3": [
+          "supported-no-impact",
+          "The product summarises internal meeting notes. The recorded use does not involve emotion recognition or biometric categorisation.",
+          null
+        ],
+        "A50-4": [
+          "supported-no-impact",
+          "Staff-only meeting summaries are not published and the use does not generate or manipulate audiovisual content.",
+          null
+        ],
+        "A50-5": [
+          "supported-no-impact",
+          "The recorded use does not establish a Quillhaven disclosure duty under Article 50(1)–(4), so paragraph 5 creates no separate duty here.",
+          null
+        ],
+        "POLICY": [
+          "supported-no-impact",
+          "The notice control for public interaction does not apply to the documented staff-only use. The restricted distribution is documented.",
+          null
+        ]
+      }
+    },
+    "AI-007": {
+      "facts_sha256": "sha256:1f9b7d23aeea0b03c072cfc1429fae5600e5c06932eacb4f0199d17d33ea7098",
+      "assessments": {
+        "A50-1": [
+          "supported-no-impact",
+          "Quillhaven operates a licensed third-party product. This provider duty does not attach to Quillhaven for this use.",
+          null
+        ],
+        "A50-2": [
+          "supported-no-impact",
+          "Quillhaven is the deployer of the licensed product. Any Article 50(2) marking duty attaches to the provider.",
+          null
+        ],
+        "A50-3": [
+          "supported-no-impact",
+          "The recorded function is a programme question-and-answer guide. The use does not identify biometric categorisation or emotion recognition.",
+          null
+        ],
+        "A50-4": [
+          "supported-no-impact",
+          "The visibly stylised fictional graphic does not depict an existing person as an authentic recording, and programme dialogue is not public-interest text publication.",
+          null
+        ],
+        "A50-5": [
+          "supported-no-impact",
+          "The recorded use does not establish a Quillhaven disclosure duty under Article 50(1)–(4), so paragraph 5 creates no separate duty here.",
+          null
+        ],
+        "POLICY": [
+          "conflicting",
+          "The owner reports a banner while the captured page shows none. A stylised avatar alone does not establish what visitors understand.",
+          "Marketing should obtain dated first-interaction evidence and resolve the notice conflict."
+        ]
+      }
+    },
+    "AI-008": {
+      "facts_sha256": "sha256:cae195117b858435dbc75e2db763aee5c1ebd7270183f5ad8ef078be99c59f48",
+      "assessments": {
+        "A50-1": [
+          "supported-no-impact",
+          "The supplier's product generates dubbed recordings. Viewers do not directly interact with the AI system in the recorded use.",
+          null
+        ],
+        "A50-2": [
+          "supported-no-impact",
+          "Quillhaven is the deployer of the licensed product. Any Article 50(2) marking duty attaches to the provider.",
+          null
+        ],
+        "A50-3": [
+          "supported-no-impact",
+          "The product translates speech and adjusts lip movement. The recorded use does not involve emotion recognition or categorising exposed people from biometric data.",
+          null
+        ],
+        "A50-4": [
+          "supported-impact",
+          "The altered recordings make real presenters appear to speak words they did not record and could be mistaken for authentic recordings. The deployer disclosure duty applies.",
+          "Verify that the visible label actually discloses artificial alteration and that it appears across the relevant versions."
+        ],
+        "A50-5": [
+          "supported-impact",
+          "The Article 50(4) disclosure must be clear, accessible and present by first exposure. A visible label is reported, while timing and accessibility are not established.",
+          "Check the published viewer experience at first exposure, including accessibility."
+        ],
+        "POLICY": [
+          "unresolved",
+          "The visible label is reported. Provenance is untested, and the draft exception has no recorded Legal approval or expiry.",
+          "Communications should test provenance. Legal should review the exception request before relying on it."
+        ]
+      }
+    }
+  }
+}

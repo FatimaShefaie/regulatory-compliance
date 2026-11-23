@@ -1,0 +1,68 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Quillhaven Academy//Project B Draft Actions//EN
+BEGIN:VEVENT
+UID:ACT-001@quillhaven-academy.project-b
+DTSTAMP:20261123T170748Z
+DTSTART;VALUE=DATE:20260904
+SUMMARY:Add and verify first-interaction AI notice
+DESCRIPTION:Action ACT-001\; system AI-004\; responsible role Learning Expe
+ rience\; basis CALENDAR:ACT-001\, IMP:AI-004:POLICY\; approval pending.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-002@quillhaven-academy.project-b
+DTSTAMP:20261123T170748Z
+DTSTART;VALUE=DATE:20260903
+SUMMARY:Resolve disclosure evidence conflict
+DESCRIPTION:Action ACT-002\; system AI-007\; responsible role Marketing\; b
+ asis CALENDAR:ACT-002\, IMP:AI-007:POLICY\; approval pending.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-003@quillhaven-academy.project-b
+DTSTAMP:20261123T170748Z
+DTSTART;VALUE=DATE:20260908
+SUMMARY:Confirm recipient disclosure practice
+DESCRIPTION:Action ACT-003\; system AI-002\; responsible role Admissions\; 
+ basis CALENDAR:ACT-003\, IMP:AI-002:POLICY\; approval pending.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-004@quillhaven-academy.project-b
+DTSTAMP:20261123T170748Z
+DTSTART;VALUE=DATE:20260910
+SUMMARY:Verify machine-readable provenance after publishing
+DESCRIPTION:Action ACT-004\; system AI-003\; responsible role Communication
+ s\; basis CALENDAR:ACT-004\, IMP:AI-003:POLICY\; approval pending.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-005@quillhaven-academy.project-b
+DTSTAMP:20261123T170748Z
+DTSTART;VALUE=DATE:20260912
+SUMMARY:Refresh provider-role and release evidence
+DESCRIPTION:Action ACT-005\; system AI-005\; responsible role Assessment Op
+ erations\; basis CALENDAR:ACT-005\, IMP:AI-005:POLICY\, IMP:AI-005:A50-1\,
+  IMP:AI-005:A50-3\, IMP:AI-005:A50-5\; approval pending.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-006@quillhaven-academy.project-b
+DTSTAMP:20261123T170748Z
+DTSTART;VALUE=DATE:20260909
+SUMMARY:Complete provenance test
+DESCRIPTION:Action ACT-006\; system AI-008\; responsible role Communication
+ s\; basis CALENDAR:ACT-006\, IMP:AI-008:POLICY\; approval pending.
+STATUS:TENTATIVE
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-008@quillhaven-academy.project-b
+DTSTAMP:20261123T170748Z
+DTSTART;VALUE=DATE:20261002
+SUMMARY:Quarterly AI register evidence review
+DESCRIPTION:Action ACT-008\; system ALL\; responsible role Operations\; bas
+ is CALENDAR:ACT-008\; approval pending.
+STATUS:TENTATIVE
+END:VEVENT
+END:VCALENDAR
